@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+.background::before {
+	content: '';
+	background-image: url("student1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    opacity: 0.80;
+
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="background">Come to me</h1>
+</body>
+</html>
